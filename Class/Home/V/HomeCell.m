@@ -44,7 +44,12 @@
     self.typeL.backgroundColor = [UIColor colorWithRed:0.600 green:0.200 blue:1.000 alpha:1.000];}
     
     if (model.headline_img_tb.length == 0) {
-        [self.imgV sd_setImageWithURL:[NSURL URLWithString:model.images[0]] placeholderImage:[UIImage imageNamed:@"Rectangle"]];
+        if (model.images.count != 0) {
+          [self.imgV sd_setImageWithURL:[NSURL URLWithString:model.images[0]] placeholderImage:[UIImage imageNamed:@"Rectangle"]];
+        }else{
+            self.imgV.image = [UIImage imageNamed:@"icon 180"];
+        }
+        
     }else{
         [self.imgV sd_setImageWithURL:[NSURL URLWithString:model.headline_img_tb] placeholderImage:[UIImage imageNamed:@"Rectangle"]];
     }

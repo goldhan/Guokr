@@ -202,7 +202,7 @@
                 [firstView sd_setImageWithURL:[NSURL URLWithString:model2.image] placeholderImage:[UIImage imageNamed:@"launchImage 4.7@2x"]];
             }
             [self.view addSubview:firstView];
-            [UIView animateWithDuration:3 animations:^{
+            [UIView animateWithDuration:5 animations:^{
                 firstView.transform = CGAffineTransformMakeScale(1.5,1.5);
             } completion:^(BOOL finished) {
                 [firstView removeFromSuperview];
@@ -595,8 +595,13 @@
     DVC.article_id = [NSString stringWithFormat:@"%@", model.ids];
     DVC.custom_title = model.title;
     if (model.headline_img_tb.length == 0) {
-       
-        DVC.picture = model.images[0];
+        if (model.images.count != 0) {
+            DVC.picture = model.images[0];
+        }else{
+            DVC.picture = @"";
+        }
+
+        
     }else{
         
         DVC.picture = model.headline_img_tb;
