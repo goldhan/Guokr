@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  果壳精选
+//
+//  Created by 韩金 on 16/7/30.
+//  Copyright © 2016年 hj. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define WIDTH  [UIScreen mainScreen].bounds.size.width
+#define HEIGHT  [UIScreen mainScreen].bounds.size.height
+#define FRAME  [UIScreen mainScreen].bounds
+
+
+#import "Helper.h"
+#import "NetFace.h"
+#import "FMDB.h"
+#import "AFNetworking.h"
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "UIButton+WebCache.h"
+
+#import "ParallaxHeaderView.h"
+
+#import "ScrollViewModel.h"
+#import "HomeModel.h"
+#import "FirestPageModel.h"
+
+#import "HttpManager.h"
+#import "DetailVC.h"
+#import "SQLManager.h"
+
+
+
+#endif /* PrefixHeader_pch */
