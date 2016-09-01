@@ -21,7 +21,7 @@ MVC 结构，程序小白一只，代码有点混乱......
 ## 收藏界面
  <img src="https://github.com/goldhan/Guokr/raw/master/UI效果图/Collection.png" width = "320" height = "568" alt="启动页" align=center />
 
-#
+
 
 # 版本
 ## 1.1
