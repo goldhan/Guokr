@@ -1,9 +1,12 @@
 # Guokr
 ## 注意
-### **此版本，AppStore 上还没有更新**
+### **AppStore 已经更新此版本**
 ## 简介
 Guokr 精选，一个科普资讯App，现在App商店已经上架。
 MVC 结构，程序小白一只，代码有点混乱......
+
+# 联系我
+## E-Mail hjhj117@hotmail.com
 
 # 截图
 ## 启动页
