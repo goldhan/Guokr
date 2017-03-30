@@ -11,6 +11,7 @@
 @implementation RecommendCell
 
 -(void)awakeFromNib{
+    [super awakeFromNib];
     self.typeL.layer.cornerRadius = self.typeL.frame.size.height / 2;
     self.typeL.layer.masksToBounds = YES;
 }

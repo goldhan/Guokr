@@ -19,6 +19,7 @@
 
 
 -(void)awakeFromNib{
+    [super awakeFromNib];
 //    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     [self.collectionView registerNib:[UINib nibWithNibName:@"MyCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
 //    self.backgroundColor = [UIColor clearColor];
